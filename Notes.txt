@@ -1,0 +1,13 @@
+# from venv command
+django-admin startproject tictactoe
+
+this command will create a new directory in the venv/scripts named tictactoe you will find manage.py in this folder
+command. I had to fully qualify the path
+D:\PythonCode\PluralDjango\venv\Scripts\python manage.py runserver
+The startup message will give you an ip address that you can navigate to in order to see the server.
+
+In urls.py the path define the url after the ip address for the server. for instance
+path('welcome/', welcome) is url 127.0.0.1:8000/welcome
+
+python regexp
+http://goo.gl/5uJsfy
