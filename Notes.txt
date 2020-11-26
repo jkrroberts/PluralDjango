@@ -12,9 +12,13 @@ path('welcome/', welcome) is url 127.0.0.1:8000/welcome
 python regexp
 http://goo.gl/5uJsfy
 
+python manage.py makemigrations #will create the migration scripts in the directory in this case the gameplay directory
+python manage.py sqlmigrate gameplay 0001 # this command shows you the ddl created for the migrate
+python manage.py migrate #executes the actual migrate of the database
+
 python manage.py showmigrations
 Above command issued at the command line shows models that need to be migrated.
-python manage.py migrate
+
 executes the migrations
 
 # creating an app in django
